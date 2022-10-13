@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="Srija">
+  <meta name="Description" content="FSD Assignment 1">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+  <style>
+  body{
+  background-image:linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.7)),url(crm\ background.jpg);
+   background-size:cover;
+  font-family:'Times New Roman','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .logo{
+    position:absolute;
+    top:5%;
+    left:3%;
+    width:100px;
+    height:100px;
+    border:2px solid white;
+    border-radius: 50px;
+    cursor:pointer;
+  }
+  .logo:hover{
+    border:5px double white;
+  }
+    h1{
+     
+      text-align:center;
+      color:whitesmoke;
+	   font-size:55px;
+
+       }
+	   button{
+	   text-align:center;
+	   }
+	 .box{
+    color:floralwhite;
+       position: absolute;
+       text-align:center;
+       font-size:30px;
+       top: 40%;
+       left:35%;
+       padding:20px;
+		   width:470px;
+		   height:320px;
+		   border:5px solid whitesmoke;
+
+		  
+	   }
+     .btn{
+      color:black;
+     
+      background-color:cyan;
+      border:2px solid whitesmoke;
+      font-size: 20px;
+     }
+     .btn:hover{
+      background-color:coral;
+      
+     }
+     ul{
+     
+      list-style: none;
+     }
+    #para{
+      position:absolute;
+      top:18%;
+      left:8%;
+      right:5%;
+      text-align: center;
+      font-size: 30px;
+      color:cyan;
+      display:block;
+    }
+	   
+
+  </style>
+  <title>Document</title>
+ </head>
+ <body>
+  <h1>CRM SERVICES</h1>
+   <img class="logo" src="crm image2.png" alt="logo">
+   <p id="para">Customer relationship management deals with 
+    Customer loyalty,
+    Communication,
+    Documentation,
+    Database & info,
+    Order and Customer,
+    Analytics & Graphics,
+    Interaction and
+    Promotion & Ads</p>
+   <div class="box">
+   <h3>Services offered</h3>
+   <ul >
+       <li><button class="a btn" type="text">e-mail service</button></li>
+	   <li><button class="b btn" type="text">call center service</button></li>
+	   <li><button class="c btn" type="text">SMS service</button></li>
+   </ul>
+   </div>
+
+   <script>
+      const email = document.querySelector(".a");
+      const call = document.querySelector(".b");
+      const sms = document.querySelector(".c");
+      const logo=document.querySelector(".logo");
+      logo.addEventListener("click", function(){ 
+        location. href = "crmMain.html";
+        });
+      email.addEventListener("click", function(){ 
+        location. href = "email.html";
+        });
+        call.addEventListener("click", function(){ 
+        location. href = "call.html";
+        });
+        sms.addEventListener("click", function(){ 
+        location. href = "sms.html";
+
+        });
+   </script>
+ </body>
+</html>
